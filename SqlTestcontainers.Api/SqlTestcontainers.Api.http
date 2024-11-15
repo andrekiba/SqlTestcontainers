@@ -1,6 +1,6 @@
 @SqlTestcontainers.Api_HostAddress = http://localhost:5106
 
-GET {{SqlTestcontainers.Api_HostAddress}}/weatherforecast/
+GET {{SqlTestcontainers.Api_HostAddress}}/bike/spark
 Accept: application/json
 
 ###

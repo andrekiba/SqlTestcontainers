@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlTestcontainers.Api", "SqlTestcontainers.Api\SqlTestcontainers.Api.csproj", "{2C20185B-16CC-4842-981A-D9160D785CD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlTestcontainers.DB", "SqlTestcontainers.DB\SqlTestcontainers.DB.csproj", "{2EBE1DAC-D6BA-4F04-AE16-1B3314653FDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2C20185B-16CC-4842-981A-D9160D785CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C20185B-16CC-4842-981A-D9160D785CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C20185B-16CC-4842-981A-D9160D785CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EBE1DAC-D6BA-4F04-AE16-1B3314653FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBE1DAC-D6BA-4F04-AE16-1B3314653FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBE1DAC-D6BA-4F04-AE16-1B3314653FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBE1DAC-D6BA-4F04-AE16-1B3314653FDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
