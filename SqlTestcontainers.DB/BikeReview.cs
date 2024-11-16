@@ -5,7 +5,7 @@ namespace SqlTestcontainers.DB;
 
 public class BikeReview
 {
-    [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
     public int Id { get; set; }
     public int BikeId { get; set; }
     public int UserId { get; set; }
