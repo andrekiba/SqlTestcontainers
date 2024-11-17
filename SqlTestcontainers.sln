@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlTestcontainers.Integrati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlTestcontainers.IntegrationTests2", "SqlTestcontainers.IntegrationTests2\SqlTestcontainers.IntegrationTests2.csproj", "{A3FBEFCB-E590-4AD9-A865-2DED757FA53C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlTestcontainers.IntegrationTests3", "SqlTestcontainers.IntegrationTests3\SqlTestcontainers.IntegrationTests3.csproj", "{48B5B19D-4A50-4295-8206-FD793C2BF20D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{A3FBEFCB-E590-4AD9-A865-2DED757FA53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3FBEFCB-E590-4AD9-A865-2DED757FA53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3FBEFCB-E590-4AD9-A865-2DED757FA53C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B5B19D-4A50-4295-8206-FD793C2BF20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B5B19D-4A50-4295-8206-FD793C2BF20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B5B19D-4A50-4295-8206-FD793C2BF20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B5B19D-4A50-4295-8206-FD793C2BF20D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
