@@ -30,8 +30,7 @@ public class ReviewBikeTests(IntegrationTestFactory factory) : DbTest(factory)
     public async Task When_BikeReview_Exists_In_Database_Already_Then_Updates_Review_Content()
     {
         var existingReview = Fixture.Create<BikeReview>();
-        await DbContext.AddAsync(existingReview);
-        await DbContext.SaveChangesAsync();
+        await Insert(existingReview);
 
         existingReview.ReviewContent = "This bike is the best one!";
 

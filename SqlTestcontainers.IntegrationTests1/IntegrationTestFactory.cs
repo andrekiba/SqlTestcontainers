@@ -11,7 +11,10 @@ namespace SqlTestcontainers.IntegrationTests1;
 
 public class IntegrationTestFactory : WebApplicationFactory<Program>
 {
-    readonly MsSqlContainer container = new MsSqlBuilder().Build();
+    readonly MsSqlContainer container = new MsSqlBuilder()
+        //.WithImage("...")
+        //.WithVolumeMount("source", "target")
+        .Build();
 
     public BikeStoreContext Db { get; private set; } = default!;
 

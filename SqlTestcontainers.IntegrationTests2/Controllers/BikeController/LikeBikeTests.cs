@@ -1,6 +1,7 @@
 using System.Net.Http.Json;
 using AutoFixture;
 using FluentAssertions;
+using Microsoft.EntityFrameworkCore;
 using SqlTestcontainers.Api.Controllers;
 using SqlTestcontainers.DB;
 
@@ -20,6 +21,9 @@ public sealed class LikeBikeTests
         await factory.InitializeAsync();
         dbContext = factory.Db;
         client = factory.CreateClient();
+        //await dbContext.Database.OpenConnectionAsync();
+        //await dbContext.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT dbo.BikeLikes ON");
+        //await dbContext.Database.CloseConnectionAsync();
     }
     
     [ClassCleanup(ClassCleanupBehavior.EndOfClass)]

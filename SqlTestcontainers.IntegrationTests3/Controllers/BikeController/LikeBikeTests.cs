@@ -30,8 +30,7 @@ public class LikeBikeTests(IntegrationTestFactory factory) : DbTest(factory)
     public async Task When_BikeLike_Exists_In_Database_Already_Then_Does_Nothing()
     {
         var existingLike = Fixture.Create<BikeLike>();
-        await DbContext.AddAsync(existingLike);
-        await DbContext.SaveChangesAsync();
+        await Insert(existingLike);
 
         await Client.PutAsJsonAsync("bike/like", new LikeBikeRequest
         {

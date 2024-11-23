@@ -20,6 +20,9 @@ public class DatabaseTestCollection2 : ICollectionFixture<IntegrationTestFactory
 [CollectionDefinition(nameof(DatabaseTestCollection3))]
 public class DatabaseTestCollection3 : ICollectionFixture<IntegrationTestFactory>;
 
+[CollectionDefinition(nameof(DatabaseTestCollection4))]
+public class DatabaseTestCollection4 : ICollectionFixture<IntegrationTestFactory>;
+
 public class IntegrationTestFactory : WebApplicationFactory<Program>, IAsyncLifetime
 {
     readonly MsSqlContainer container = new MsSqlBuilder().Build();

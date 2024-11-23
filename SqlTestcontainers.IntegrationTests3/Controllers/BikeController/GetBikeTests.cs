@@ -12,8 +12,7 @@ public class GetBikeTests(IntegrationTestFactory factory) : DbTest(factory)
     public async Task When_Bike_Exists_Then_Returns_It()
     {
         var existingBike = Fixture.Create<Bike>();
-        await DbContext.AddAsync(existingBike);
-        await DbContext.SaveChangesAsync();
+        await Insert(existingBike);
         
         var book = await Client.GetFromJsonAsync<Bike>($"bike/{existingBike.Name}");
 
